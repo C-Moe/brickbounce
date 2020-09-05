@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brick Bounce</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+
+    <div class="flex-container">
+    <div class="flex-child">
+      <div class="flex-container">
+        <h1>Brick Bounce</h1>
+        <img src="bounce.png">
+      </div>
+      <p>A simple challenge. Try your luck and block as many circles as you can!</p>
+      <h3 id="score">Score: 0</h3>
+      <h3 id="high-score">High Score: 0</h3>
+    </div>
+    
+  <div class="flex-child">
+    <h3>Instructions</h3>
+    <ol>
+      <li>Click where you want to place the bricks. You only have 3 so choose wisely!</li>
+      <li>Press the start button to create circles. They'll bounce if they hit a brick.</li>
+      <Li>The counter will keep track of how many circles you block and your high score.</Li>
+      <li>You can choose the color scheme for the circles too :)</li>
+      <li>Press the clear button to remove your bricks and try again.</li>
+      <li>Good luck!</li>
+    </ol>
+  </div>
+</div>
+
+  <div id="buttons">
+    <button id="start">Start</button>
+    <button id="clear">Clear</button>
+
+      <select id="colorPalette">
+        <option value="interpolateInferno">Inferno</option>
+        <option value="interpolateViridis">Viridis</option>
+        <option value="interpolateMagma">Magma</option>
+        <option value="interpolatePlasma">Plasma</option>
+        <option value="interpolateWarm">Warm</option>
+        <option value="interpolateCool">Cool</option>
+        <option value="interpolateRainbow" selected>Rainbow</option>
+      </select>
+  </div>
+
+    <div id="canvas"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
